@@ -54,7 +54,6 @@ function initializeMap() {
     };
     const overlays = {
         "Bidang Tanah": layers['Bidang Tanah'],
-        "Zona Nilai Tanah": layers['Zona Nilai Tanah'],
         "Admin Genengsari": layers['Admin Genengsari'],
         "Jaringan Jalan": layers['Jaringan Jalan'],
         "Sungai": layers['Sungai'],
