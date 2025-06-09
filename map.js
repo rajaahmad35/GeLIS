@@ -19,15 +19,6 @@ function initializeMap() {
         'Harga Tanah': L.geoJSON(null, { style: { color: 'red', fillOpacity: 0.4 } })
     };
 
-    // Load GeoJSON files
-    const geoJsonUrls = {
-        'Bidang Tanah': 'bidang_tanah.geojson',
-        'Admin Genengsari': 'admin_genengsari.geojson',
-        'Jaringan Jalan': 'jaringan_jalan.geojson',
-        'Sungai': 'sungai.geojson',
-        'Harga Tanah': 'harga_tanah.geojson'
-    };
-
     Object.keys(geoJsonUrls).forEach(layerName => {
         fetch(geoJsonUrls[layerName])
             .then(response => {
